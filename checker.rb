@@ -5,7 +5,7 @@ end
 require 'mechanize'
 
 agent = Mechanize.new
-plate_numbers = %w{JEDI001}
+plate_numbers = %w{6GRG094}
 plate_numbers.each do |plate_number|
   puts "Checking #{plate_number}"
   page = agent.get('https://prodpci.etimspayments.com/pbw/include/sanfrancisco/input.jsp')
